@@ -1,34 +1,14 @@
-plugins {
-    id 'maven-publish'
-}
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-group = 'net.runelite'
-version = '1.9.8'
+    <groupId>net.runelite</groupId>
+    <artifactId>runelite-api</artifactId>
+    <version>1.9.8</version>
+    <packaging>jar</packaging>
 
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            from components.java // or kotlin if you're using Kotlin
-
-            // Optional: manually configure dependencies
-            pom {
-                name = 'RuneLite API'
-                description = 'A fake RuneLite API for testing'
-                url = 'https://example.com'
-                licenses {
-                    license {
-                        name = 'The MIT License'
-                        url = 'https://opensource.org/licenses/MIT'
-                    }
-                }
-                developers {
-                    developer {
-                        id = 'you'
-                        name = 'Your Name'
-                        email = 'you@example.com'
-                    }
-                }
-            }
-        }
-    }
-}
+    <name>RuneLite API</name>
+    <description>Custom RuneLite API placeholder</description>
+</project>
